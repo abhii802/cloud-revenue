@@ -15,14 +15,14 @@
     <style>
         body {
             font-family: 'DM Sans', sans-serif;
-            background-color: #080c14;
-            color: #f3f4f6;
+            background-color: #ffffff;
+            color: #1f2937;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Space Grotesk', sans-serif;
         }
         .gradient-text {
-            background: linear-gradient(135deg, #38bdf8 0%, #10b981 100%);
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -35,7 +35,7 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             border-radius: inherit;
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.35);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -43,9 +43,9 @@
             opacity: 1;
         }
         .card-bg {
-            background: rgba(15, 23, 42, 0.6);
+            background: #ffffff;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(51, 65, 85, 0.4);
+            border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
@@ -53,42 +53,42 @@
             height: 6px;
         }
         ::-webkit-scrollbar-track {
-            background: #080c14;
+            background: #f9fafb;
         }
         ::-webkit-scrollbar-thumb {
-            background: #1e293b;
+            background: #cbd5e1;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #334155;
+            background: #94a3b8;
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased">
+<body class="min-h-screen flex flex-col antialiased bg-white text-slate-800">
 
     <!-- Top Navigation Bar -->
-    <header class="border-b border-slate-800/80 bg-slate-950/80 sticky top-0 z-50 backdrop-blur-md">
+    <header class="border-b border-slate-200 bg-white/80 sticky top-0 z-50 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-sky-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-sky-500/10">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-orange-600 to-orange-400 flex items-center justify-center shadow-md shadow-orange-500/10">
                     <i class="fa-solid fa-server text-slate-950 text-lg font-bold"></i>
                 </div>
                 <div>
                     <span class="font-bold text-lg tracking-wider block">PROJECT CLOUD-INCUBATOR</span>
-                    <span class="text-xs text-emerald-400 font-semibold uppercase tracking-widest block -mt-1">CSE Lab Network</span>
+                    <span class="text-xs text-orange-600 font-semibold uppercase tracking-widest block -mt-1">CSE Lab Network</span>
                 </div>
             </div>
             
             <div class="hidden md:flex items-center gap-6">
-                <a href="#resources" class="text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-slate-100 transition-colors">Free Resources</a>
-                <a href="#blueprint" class="text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-slate-100 transition-colors">Blueprint</a>
-                <a href="#ledger" class="text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-slate-100 transition-colors">Growth Ledger</a>
-                <a href="#calculator" class="text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-slate-100 transition-colors">Rev-Share Planner</a>
+                <a href="#resources" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors">Free Resources</a>
+                <a href="#blueprint" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors">Blueprint</a>
+                <a href="#ledger" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors">Growth Ledger</a>
+                <a href="#calculator" class="text-xs font-semibold uppercase tracking-wider text-slate-600 hover:text-orange-600 transition-colors">Rev-Share Planner</a>
             </div>
 
             <div class="flex items-center gap-2">
-                <span class="text-xs text-slate-300 font-semibold bg-slate-900/90 px-3.5 py-2 rounded-full border border-slate-800">
-                    Advisor: <strong class="text-sky-400">Dr. Rajeev Kumar Chechi</strong>
+                <span class="text-xs text-slate-700 font-semibold bg-slate-50 px-3.5 py-2 rounded-full border border-slate-200">
+                    Advisor: <strong class="text-orange-600">Dr. Rajeev Kumar Chechi</strong>
                 </span>
             </div>
         </div>
@@ -98,48 +98,48 @@
     <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
         
         <!-- Hero Section -->
-        <section class="relative rounded-3xl overflow-hidden border border-slate-800 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8 sm:p-12 shadow-2xl" data-section-id="019ef922-fe4d-7514-9b57-574e3373ec35">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.12),transparent_40%)]"></div>
+        <section class="relative rounded-3xl overflow-hidden border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-slate-50 p-8 sm:p-12 shadow-md" data-section-id="019ef922-fe4d-7514-9b57-574e3373ec35">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.06),transparent_40%)]"></div>
             
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wide">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-600 text-xs font-semibold uppercase tracking-wide">
                         <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
                         CSE Department Innovation Initiative
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight" data-section-id="019ef922-fe4d-7563-b3fc-60563b6d2a8e">
                         Launch Cloud Startups with <span class="gradient-text">Zero Initial Cost</span>
                     </h1>
-                    <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed" data-section-id="019ef922-fe4d-7573-b9a0-ca5aa477130f">
+                    <p class="text-slate-600 text-base sm:text-lg max-w-xl leading-relaxed" data-section-id="019ef922-fe4d-7573-b9a0-ca5aa477130f">
                         An institutional sandbox designed for students to master global cloud architectures, leverage massive academic free tiers, launch micro-services, and feed an automated university growth ledger.
                     </p>
                     
                     <div class="flex flex-wrap gap-4 pt-2">
-                        <a href="#blueprint" class="glow-button px-6 py-3 bg-gradient-to-r from-sky-500 to-emerald-500 text-slate-950 font-bold rounded-xl shadow-lg hover:shadow-sky-500/20 transition-all text-sm flex items-center gap-2">
+                        <a href="#blueprint" class="glow-button px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded-xl shadow-md hover:shadow-orange-500/20 transition-all text-sm flex items-center gap-2">
                             <i class="fa-solid fa-graduation-cap"></i> View 5-Step Playbook
                         </a>
-                        <a href="#ledger" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-100 font-semibold rounded-xl border border-slate-800 transition-all text-sm flex items-center gap-2">
-                            <i class="fa-solid fa-square-poll-vertical text-emerald-400"></i> Open Live Ledger Board
+                        <a href="#ledger" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold rounded-xl border border-slate-200 transition-all text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-square-poll-vertical text-orange-500"></i> Open Live Ledger Board
                         </a>
                     </div>
                 </div>
 
                 <div class="lg:col-span-5">
-                    <div class="card-bg p-6 rounded-2xl border border-slate-800/80 space-y-4 shadow-xl">
-                        <div class="flex items-center gap-4 border-b border-slate-800/80 pb-4">
-                            <div class="h-12 w-12 rounded-full bg-sky-500/10 flex items-center justify-center border border-sky-500/20">
-                                <i class="fa-solid fa-user-tie text-sky-400 text-xl"></i>
+                    <div class="card-bg p-6 rounded-2xl border border-slate-200 bg-white space-y-4 shadow-md">
+                        <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                            <div class="h-12 w-12 rounded-full bg-orange-500/10 flex items-center justify-center border border-orange-500/20">
+                                <i class="fa-solid fa-user-tie text-orange-600 text-xl"></i>
                             </div>
                             <div>
-                                <h3 class="font-bold text-lg text-slate-100" data-section-id="019ef922-fe4d-75ca-954d-b25019066eee">Project Director & Advisor</h3>
-                                <p class="text-sm text-emerald-400 font-semibold tracking-wider" data-section-id="019ef922-fe4d-75d5-83ea-95cbaff521ab">Dr. Rajeev Kumar Chechi</p>
+                                <h3 class="font-bold text-lg text-slate-900" data-section-id="019ef922-fe4d-75ca-954d-b25019066eee">Project Director & Advisor</h3>
+                                <p class="text-sm text-orange-600 font-semibold tracking-wider" data-section-id="019ef922-fe4d-75d5-83ea-95cbaff521ab">Dr. Rajeev Kumar Chechi</p>
                             </div>
                         </div>
-                        <p class="text-slate-400 text-sm italic leading-relaxed" data-section-id="019ef922-fe4d-75e1-9585-534d3b13eef0">
+                        <p class="text-slate-600 text-sm italic leading-relaxed" data-section-id="019ef922-fe4d-75e1-9585-534d3b13eef0">
                             "By combining global serverless learning footprints with structured revenue-sharing mechanisms, we empower students to transition directly from academic programmers to revenue-generating cloud entrepreneurs—simultaneously funding department research."
                         </p>
                         <div class="flex items-center gap-2 text-xs text-slate-500">
-                            <i class="fa-solid fa-award text-emerald-400"></i>
+                            <i class="fa-solid fa-award text-orange-600"></i>
                             <span>Department of Computer Science & Engineering</span>
                         </div>
                     </div>
@@ -150,86 +150,86 @@
         <!-- Provider Onboarding Hub -->
         <section id="resources" class="space-y-6" data-section-id="019ef922-fe4d-7605-ad1c-b020043463ab">
             <div class="text-center max-w-3xl mx-auto space-y-2">
-                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-100 flex items-center justify-center gap-2" data-section-id="019ef922-fe4d-7616-8678-2f5fba76941e">
-                    <i class="fa-solid fa-cloud text-sky-400"></i> Academic Free-Tier Gateways
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 flex items-center justify-center gap-2" data-section-id="019ef922-fe4d-7616-8678-2f5fba76941e">
+                    <i class="fa-solid fa-cloud text-orange-500"></i> Academic Free-Tier Gateways
                 </h2>
-                <p class="text-slate-400 text-sm" data-section-id="019ef922-fe4d-7623-bfa7-9bded557fa90">
+                <p class="text-slate-600 text-sm" data-section-id="019ef922-fe4d-7623-bfa7-9bded557fa90">
                     First, students register for official educational learning accounts to unlock over <strong>$500+ in free cloud resources</strong>.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 <!-- AWS -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/60 flex flex-col justify-between hover:border-orange-500/40 transition-colors">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex flex-col justify-between hover:border-orange-500 transition-colors shadow-sm">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 text-[10px] font-bold uppercase tracking-wider">AWS Educate</span>
+                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-600 text-[10px] font-bold uppercase tracking-wider">AWS Educate</span>
                             <i class="fa-brands fa-aws text-orange-400 text-xl"></i>
                         </div>
-                        <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-767e-80fa-57db1fc88127">Amazon Web Services</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-7687-9f65-7cc08b1f624b">Unlocks $100 in free cloud credits, serverless micro-databases, and free machine learning labs.</p>
+                        <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-767e-80fa-57db1fc88127">Amazon Web Services</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-7687-9f65-7cc08b1f624b">Unlocks $100 in free cloud credits, serverless micro-databases, and free machine learning labs.</p>
                     </div>
-                    <a href="https://aws.amazon.com/education/awseducate/" target="_blank" class="mt-4 text-[11px] font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                    <a href="https://aws.amazon.com/education/awseducate/" target="_blank" class="mt-4 text-[11px] font-bold text-orange-600 hover:text-orange-500 flex items-center gap-1">
                         Claim Credits <i class="fa-solid fa-arrow-right text-[9px]"></i>
                     </a>
                 </div>
 
                 <!-- Azure -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/60 flex flex-col justify-between hover:border-blue-500/40 transition-colors">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex flex-col justify-between hover:border-orange-500 transition-colors shadow-sm">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-wider">Azure Student</span>
+                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-600 text-[10px] font-bold uppercase tracking-wider">Azure Student</span>
                             <i class="fa-brands fa-microsoft text-blue-400 text-lg"></i>
                         </div>
-                        <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-76bc-8e0e-2c21e92204cc">Microsoft Azure</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-76c5-a1a6-4ce724174d0f">Provides $100 active credits + 12 months of free database and app hosting services with no credit card required.</p>
+                        <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-76bc-8e0e-2c21e92204cc">Microsoft Azure</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-76c5-a1a6-4ce724174d0f">Provides $100 active credits + 12 months of free database and app hosting services with no credit card required.</p>
                     </div>
-                    <a href="https://azure.microsoft.com/en-us/free/students/" target="_blank" class="mt-4 text-[11px] font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                    <a href="https://azure.microsoft.com/en-us/free/students/" target="_blank" class="mt-4 text-[11px] font-bold text-orange-600 hover:text-orange-500 flex items-center gap-1">
                         Onboard Now <i class="fa-solid fa-arrow-right text-[9px]"></i>
                     </a>
                 </div>
 
                 <!-- Google Cloud -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/60 flex flex-col justify-between hover:border-red-500/40 transition-colors">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex flex-col justify-between hover:border-orange-500 transition-colors shadow-sm">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2 py-0.5 rounded bg-red-500/10 text-red-400 text-[10px] font-bold uppercase tracking-wider">GCP Free Tier</span>
+                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-600 text-[10px] font-bold uppercase tracking-wider">GCP Free Tier</span>
                             <i class="fa-brands fa-google text-red-400 text-lg"></i>
                         </div>
-                        <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-76f7-8744-030ccef89dce">Google Cloud Platform</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-76ff-ba6d-8978e3c163b1">Grants $300 in test credits, dynamic Firebase backend tiers, and permanently free Google Cloud Functions.</p>
+                        <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-76f7-8744-030ccef89dce">Google Cloud Platform</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-76ff-ba6d-8978e3c163b1">Grants $300 in test credits, dynamic Firebase backend tiers, and permanently free Google Cloud Functions.</p>
                     </div>
-                    <a href="https://cloud.google.com/edu/students" target="_blank" class="mt-4 text-[11px] font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                    <a href="https://cloud.google.com/edu/students" target="_blank" class="mt-4 text-[11px] font-bold text-orange-600 hover:text-orange-500 flex items-center gap-1">
                         Access Console <i class="fa-solid fa-arrow-right text-[9px]"></i>
                     </a>
                 </div>
 
                 <!-- Cloudflare -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/60 flex flex-col justify-between hover:border-amber-500/40 transition-colors">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex flex-col justify-between hover:border-orange-500 transition-colors shadow-sm">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 text-[10px] font-bold uppercase tracking-wider">Edge Workers</span>
+                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-600 text-[10px] font-bold uppercase tracking-wider">Edge Workers</span>
                             <i class="fa-brands fa-cloudflare text-amber-400 text-xl"></i>
                         </div>
-                        <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-775c-a905-7c0e91f52032">Cloudflare Workers</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-7764-8ea9-05425f227caa">Offers 100,000 free serverless requests per day with near-zero latency, perfect for edge microservice scaling.</p>
+                        <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-775c-a905-7c0e91f52032">Cloudflare Workers</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-7764-8ea9-05425f227caa">Offers 100,000 free serverless requests per day with near-zero latency, perfect for edge microservice scaling.</p>
                     </div>
-                    <a href="https://workers.cloudflare.com/" target="_blank" class="mt-4 text-[11px] font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                    <a href="https://workers.cloudflare.com/" target="_blank" class="mt-4 text-[11px] font-bold text-orange-600 hover:text-orange-500 flex items-center gap-1">
                         Register Free <i class="fa-solid fa-arrow-right text-[9px]"></i>
                     </a>
                 </div>
 
                 <!-- GitHub -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/60 flex flex-col justify-between hover:border-slate-300/40 transition-colors">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex flex-col justify-between hover:border-orange-500 transition-colors shadow-sm">
                     <div class="space-y-3">
                         <div class="flex items-center justify-between">
-                            <span class="px-2 py-0.5 rounded bg-slate-300/10 text-slate-300 text-[10px] font-bold uppercase tracking-wider">Student Pack</span>
+                            <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-600 text-[10px] font-bold uppercase tracking-wider">Student Pack</span>
                             <i class="fa-brands fa-github text-slate-200 text-xl"></i>
                         </div>
-                        <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-7793-94af-8c5f0a6421a2">GitHub Student Pack</h4>
-                        <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-779c-ad29-18721cc66d39">Bundles free domain names, professional dev tools, and premium access codes for Heroku, MongoDB, & Stripe.</p>
+                        <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-7793-94af-8c5f0a6421a2">GitHub Student Pack</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-779c-ad29-18721cc66d39">Bundles free domain names, professional dev tools, and premium access codes for Heroku, MongoDB, & Stripe.</p>
                     </div>
-                    <a href="https://education.github.com/pack" target="_blank" class="mt-4 text-[11px] font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
+                    <a href="https://education.github.com/pack" target="_blank" class="mt-4 text-[11px] font-bold text-orange-600 hover:text-orange-500 flex items-center gap-1">
                         Get Pack <i class="fa-solid fa-arrow-right text-[9px]"></i>
                     </a>
                 </div>
@@ -240,71 +240,71 @@
         <section id="blueprint" class="space-y-6" data-section-id="019ef922-fe4d-77ba-9257-7935c29f3b2f">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-100" data-section-id="019ef922-fe4d-77c9-9f9e-0949050e7d44">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900" data-section-id="019ef922-fe4d-77c9-9f9e-0949050e7d44">
                         The Cloud Incubator Blueprint
                     </h2>
-                    <p class="text-slate-400 text-sm" data-section-id="019ef922-fe4d-77d3-9bed-9cf64cf8086d">
+                    <p class="text-slate-600 text-sm" data-section-id="019ef922-fe4d-77d3-9bed-9cf64cf8086d">
                         Our structured workflow designed to generate recurring income for students and funding for the university lab.
                     </p>
                 </div>
-                <span class="px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center gap-1.5 self-start md:self-auto">
-                    <i class="fa-solid fa-clock text-sky-400"></i> Setup: 1 Weekend
+                <span class="px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1.5 self-start md:self-auto">
+                    <i class="fa-solid fa-clock text-orange-500"></i> Setup: 1 Weekend
                 </span>
             </div>
 
             <!-- Steps Progress Cards -->
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
                 <!-- Step 1 -->
-                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-sky-500 space-y-3">
-                    <div class="h-8 w-8 rounded-lg bg-sky-500/10 text-sky-400 font-bold flex items-center justify-center text-sm">
+                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-orange-500 space-y-3 bg-white shadow-sm">
+                    <div class="h-8 w-8 rounded-lg bg-orange-500/10 text-orange-600 font-bold flex items-center justify-center text-sm">
                         01
                     </div>
-                    <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-7800-a55d-2a6f76c5f4fb">Academic Claim</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-7808-b5ce-5a096ab10d7c">
+                    <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-7800-a55d-2a6f76c5f4fb">Academic Claim</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-7808-b5ce-5a096ab10d7c">
                         Students claim the AWS/Azure $100 educational credits and Cloudflare's 100k daily free edge limits.
                     </p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-sky-500 space-y-3">
-                    <div class="h-8 w-8 rounded-lg bg-sky-500/10 text-sky-400 font-bold flex items-center justify-center text-sm">
+                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-orange-500 space-y-3 bg-white shadow-sm">
+                    <div class="h-8 w-8 rounded-lg bg-orange-500/10 text-orange-600 font-bold flex items-center justify-center text-sm">
                         02
                     </div>
-                    <h4 class="font-bold text-slate-100 text-sm" data-section-id="019ef922-fe4d-7820-9d8f-bc0faf8268bf">Expert Specialty</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-7828-b266-4b36af304a15">
+                    <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-7820-9d8f-bc0faf8268bf">Expert Specialty</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-7828-b266-4b36af304a15">
                         Students choose areas of core interest (e.g., Sentiment AI, Secure QR API) to design an efficient microservice.
                     </p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-emerald-500 space-y-3">
-                    <div class="h-8 w-8 rounded-lg bg-emerald-500/10 text-emerald-400 font-bold flex items-center justify-center text-sm">
+                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-orange-600 space-y-3 bg-white shadow-sm">
+                    <div class="h-8 w-8 rounded-lg bg-orange-500/10 text-orange-600 font-bold flex items-center justify-center text-sm">
                         03
                     </div>
-                    <h4 class="font-bold text-emerald-400 text-sm" data-section-id="019ef922-fe4d-7855-a634-c6a7291a121c">Partner Referral</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-785e-a66a-da1d19ec51d5">
+                    <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-7855-a634-c6a7291a121c">Partner Referral</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-785e-a66a-da1d19ec51d5">
                         Students launch on university referral links. When a startup outgrows free credits, upgrades trigger lab bonuses.
                     </p>
                 </div>
 
                 <!-- Step 4 -->
-                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-emerald-500 space-y-3">
-                    <div class="h-8 w-8 rounded-lg bg-emerald-500/10 text-emerald-400 font-bold flex items-center justify-center text-sm">
+                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-orange-600 space-y-3 bg-white shadow-sm">
+                    <div class="h-8 w-8 rounded-lg bg-orange-500/10 text-orange-600 font-bold flex items-center justify-center text-sm">
                         04
                     </div>
-                    <h4 class="font-bold text-emerald-400 text-sm" data-section-id="019ef922-fe4d-7876-be9b-13466af70970">Rev-Share Contract</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-788d-8634-1ea27dd79ec0">
+                    <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-7876-be9b-13466af70970">Rev-Share Contract</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-788d-8634-1ea27dd79ec0">
                         In exchange for mentorship, labs, and guidance, students pledge a small 3% rev-share to the university fund.
                     </p>
                 </div>
 
                 <!-- Step 5 -->
-                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-amber-500 space-y-3">
-                    <div class="h-8 w-8 rounded-lg bg-amber-500/10 text-amber-400 font-bold flex items-center justify-center text-sm">
+                <div class="card-bg p-5 rounded-2xl border-t-4 border-t-orange-700 space-y-3 bg-white shadow-sm">
+                    <div class="h-8 w-8 rounded-lg bg-orange-500/10 text-orange-600 font-bold flex items-center justify-center text-sm">
                         05
                     </div>
-                    <h4 class="font-bold text-amber-400 text-sm" data-section-id="019ef922-fe4d-78fb-8944-b9c81f17c0bf">Real-Time Split</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed" data-section-id="019ef922-fe4d-7905-adb2-548efb42a1f2">
+                    <h4 class="font-bold text-slate-900 text-sm" data-section-id="019ef922-fe4d-78fb-8944-b9c81f17c0bf">Real-Time Split</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed" data-section-id="019ef922-fe4d-7905-adb2-548efb42a1f2">
                         Developer traffic flows via RapidAPI. Real-time payouts instantly clear: 97% to students, 3% to the Lab Ledger.
                     </p>
                 </div>
@@ -315,19 +315,19 @@
         <section id="ledger" class="space-y-6" data-section-id="019ef922-fe4d-7915-ac20-18bf82b1a1cf">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-100" data-section-id="019ef922-fe4d-7928-af49-5ab00454f22c">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900" data-section-id="019ef922-fe4d-7928-af49-5ab00454f22c">
                         Live Incubator Ledger Board
                     </h2>
-                    <p class="text-slate-400 text-sm" data-section-id="019ef922-fe4d-7931-a726-e956a477aebc">
+                    <p class="text-slate-600 text-sm" data-section-id="019ef922-fe4d-7931-a726-e956a477aebc">
                         Simulate developer requests calling student-built edge APIs and observe the real-time revenue splits.
                     </p>
                 </div>
                 
                 <div class="flex items-center gap-3">
-                    <button id="sim-btn" onclick="toggleSim()" class="px-5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2">
+                    <button id="sim-btn" onclick="toggleSim()" class="px-5 py-2.5 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2">
                         <i id="sim-icon" class="fa-solid fa-play"></i> <span id="sim-text">Activate Simulations</span>
                     </button>
-                    <button id="boost-btn" onclick="boostTraffic()" disabled class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 disabled:opacity-40 text-slate-400 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5">
+                    <button id="boost-btn" onclick="boostTraffic()" disabled class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 disabled:opacity-40 text-slate-700 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5">
                         <i class="fa-solid fa-gauge-high"></i> Boost Traffic (3x)
                     </button>
                 </div>
@@ -336,34 +336,34 @@
             <!-- Dynamic Counter Panels -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Students Earnings -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/80 flex items-center justify-between shadow-lg">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex items-center justify-between shadow-sm">
                     <div>
                         <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Student Micro-Ventures (Net)</span>
-                        <span class="text-3xl font-bold font-mono text-sky-400" id="stat-student">$0.0000</span>
+                        <span class="text-3xl font-bold font-mono text-orange-600" id="stat-student">$0.0000</span>
                     </div>
-                    <div class="h-12 w-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 border border-sky-500/20">
+                    <div class="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 border border-orange-500/20">
                         <i class="fa-solid fa-graduation-cap text-xl"></i>
                     </div>
                 </div>
 
                 <!-- Lab Rev-Share Ledger -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/80 flex items-center justify-between shadow-lg">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex items-center justify-between shadow-sm">
                     <div>
                         <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">University Lab Fund (3% share)</span>
-                        <span class="text-3xl font-bold font-mono text-emerald-400" id="stat-lab">$0.0000</span>
+                        <span class="text-3xl font-bold font-mono text-orange-600" id="stat-lab">$0.0000</span>
                     </div>
-                    <div class="h-12 w-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 border border-emerald-500/20">
+                    <div class="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 border border-orange-500/20">
                         <i class="fa-solid fa-building-columns text-xl"></i>
                     </div>
                 </div>
 
                 <!-- Cloud Providers Referral Ledger -->
-                <div class="card-bg p-5 rounded-xl border border-slate-800/80 flex items-center justify-between shadow-lg">
+                <div class="card-bg p-5 rounded-xl border border-slate-200 bg-white flex items-center justify-between shadow-sm">
                     <div>
                         <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block">Lab Referral Commissions</span>
-                        <span class="text-3xl font-bold font-mono text-amber-400" id="stat-referral">$0.0000</span>
+                        <span class="text-3xl font-bold font-mono text-orange-600" id="stat-referral">$0.0000</span>
                     </div>
-                    <div class="h-12 w-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 border border-amber-500/20">
+                    <div class="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 border border-orange-500/20">
                         <i class="fa-solid fa-circle-nodes text-xl"></i>
                     </div>
                 </div>
@@ -372,9 +372,9 @@
             <!-- Visualization and Live Terminals -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 <!-- Activity Chart -->
-                <div class="lg:col-span-7 card-bg p-6 rounded-2xl border border-slate-800">
-                    <h3 class="font-bold text-slate-200 text-sm mb-4 flex items-center gap-2" data-section-id="019ef922-fe4d-79de-861d-50fc224c1241">
-                        <i class="fa-solid fa-chart-line text-sky-400"></i> Serverless Edge Global Hits (Dynamic Load Monitor)
+                <div class="lg:col-span-7 card-bg p-6 rounded-2xl border border-slate-200 bg-white shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-sm mb-4 flex items-center gap-2" data-section-id="019ef922-fe4d-79de-861d-50fc224c1241">
+                        <i class="fa-solid fa-chart-line text-orange-500"></i> Serverless Edge Global Hits (Dynamic Load Monitor)
                     </h3>
                     <div class="relative h-64 w-full">
                         <canvas id="live-chart"></canvas>
@@ -382,10 +382,10 @@
                 </div>
 
                 <!-- Transaction Terminal Feed -->
-                <div class="lg:col-span-5 card-bg p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                <div class="lg:col-span-5 card-bg p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex flex-col justify-between">
                     <div class="space-y-3">
-                        <h3 class="font-bold text-slate-200 text-sm flex items-center gap-2" data-section-id="019ef922-fe4d-7a0a-b082-83d0714cdbd9">
-                            <i class="fa-solid fa-terminal text-emerald-400"></i> Real-Time Split-Earning Transaction Stream
+                        <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2" data-section-id="019ef922-fe4d-7a0a-b082-83d0714cdbd9">
+                            <i class="fa-solid fa-terminal text-orange-500"></i> Real-Time Split-Earning Transaction Stream
                         </h3>
                         <div id="logs" class="bg-slate-950 p-4 rounded-xl border border-slate-900 font-mono text-[10px] leading-relaxed text-slate-400 h-44 overflow-y-auto space-y-1">
                             <div class="text-slate-600">[System] Cloud Incubator Ledger loaded. Ready to stream...</div>
@@ -393,7 +393,7 @@
                     </div>
                     <div class="flex items-center justify-between mt-4">
                         <span class="text-[10px] text-slate-500"><i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Uptime: 100%</span>
-                        <button onclick="clearLogs()" class="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-[10px] text-slate-400 font-bold rounded-lg transition-all">
+                        <button onclick="clearLogs()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 text-[10px] text-slate-600 font-bold rounded-lg transition-all">
                             Clear Feed
                         </button>
                     </div>
@@ -404,10 +404,10 @@
         <!-- Rev-Share ROI Planner -->
         <section id="calculator" class="space-y-6" data-section-id="019ef922-fe4d-7a45-af87-9a7614b3c6f4">
             <div class="text-center max-w-2xl mx-auto space-y-2">
-                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-100" data-section-id="019ef922-fe4d-7a51-9412-d7adb7926bd7">
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900" data-section-id="019ef922-fe4d-7a51-9412-d7adb7926bd7">
                     Revenue-Share Financial Planner
                 </h2>
-                <p class="text-slate-400 text-sm" data-section-id="019ef922-fe4d-7a5b-af1b-b9199d00db0f">
+                <p class="text-slate-600 text-sm" data-section-id="019ef922-fe4d-7a5b-af1b-b9199d00db0f">
                     Model and compute estimated monthly and annual cash projections for both student cohorts and the CSE Lab.
                 </p>
             </div>
@@ -415,87 +415,87 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 <!-- Slide Inputs -->
                 <div class="lg:col-span-7 card-bg p-6 rounded-2xl space-y-6 flex flex-col justify-center">
-                    <h3 class="font-bold text-lg text-slate-100 border-b border-slate-800 pb-3 flex items-center gap-2" data-section-id="019ef922-fe4d-7a76-a327-d3d420cbf851">
-                        <i class="fa-solid fa-sliders text-sky-400"></i> Adjustable Parameters
+                    <h3 class="font-bold text-lg text-slate-800 border-b border-slate-200 pb-3 flex items-center gap-2" data-section-id="019ef922-fe4d-7a76-a327-d3d420cbf851">
+                        <i class="fa-solid fa-sliders text-orange-500"></i> Adjustable Parameters
                     </h3>
                     
                     <div class="space-y-5">
                         <!-- Student Teams -->
                         <div>
-                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">
+                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
                                 <label>Active Student Startups</label>
-                                <span class="text-sky-400 font-bold" id="val-teams">8 Teams</span>
+                                <span class="text-orange-500 font-bold" id="val-teams">8 Teams</span>
                             </div>
-                            <input type="range" id="input-teams" min="1" max="30" step="1" value="8" oninput="runFinancialModel()" class="w-full accent-sky-500 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                            <input type="range" id="input-teams" min="1" max="30" step="1" value="8" oninput="runFinancialModel()" class="w-full accent-orange-500 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                             <span class="text-[9px] text-slate-500">The total number of micro-SaaS student teams launched in the CSE lab.</span>
                         </div>
 
                         <!-- Daily Hits -->
                         <div>
-                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">
+                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
                                 <label>Daily Paid API Hits per Team</label>
-                                <span class="text-sky-400 font-bold" id="val-hits">25,000</span>
+                                <span class="text-orange-500 font-bold" id="val-hits">25,000</span>
                             </div>
-                            <input type="range" id="input-hits" min="1000" max="150000" step="1000" value="25000" oninput="runFinancialModel()" class="w-full accent-sky-500 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                            <input type="range" id="input-hits" min="1000" max="150000" step="1000" value="25000" oninput="runFinancialModel()" class="w-full accent-orange-500 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                             <span class="text-[9px] text-slate-500">Developer client requests targeting the microservices (beyond free tiers).</span>
                         </div>
 
                         <!-- Rev-Share Slider -->
                         <div>
-                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">
+                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
                                 <label>University Incubator Rev-Share %</label>
-                                <span class="text-emerald-400 font-bold" id="val-rev">3.5 %</span>
+                                <span class="text-orange-500 font-bold" id="val-rev">3.5 %</span>
                             </div>
-                            <input type="range" id="input-rev" min="1.0" max="10.0" step="0.5" value="3.5" oninput="runFinancialModel()" class="w-full accent-emerald-500 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                            <input type="range" id="input-rev" min="1.0" max="10.0" step="0.5" value="3.5" oninput="runFinancialModel()" class="w-full accent-orange-500 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                             <span class="text-[9px] text-slate-500">The share allocated directly to the CSE Lab Fund to purchase hardware & sponsor events.</span>
                         </div>
 
                         <!-- Referral upgrades conversions -->
                         <div>
-                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">
+                            <div class="flex justify-between text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1">
                                 <label>Team Upgrades to Paid Cloud Tiers</label>
-                                <span class="text-amber-400 font-bold" id="val-referrals">3 Upgrades/mo</span>
+                                <span class="text-orange-600 font-bold" id="val-referrals">3 Upgrades/mo</span>
                             </div>
-                            <input type="range" id="input-referrals" min="0" max="10" step="1" value="3" oninput="runFinancialModel()" class="w-full accent-amber-500 h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer">
+                            <input type="range" id="input-referrals" min="0" max="10" step="1" value="3" oninput="runFinancialModel()" class="w-full accent-orange-500 h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer">
                             <span class="text-[9px] text-slate-500">Student teams scaling up, triggering the $15 laboratory partner reward.</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projected Results -->
-                <div class="lg:col-span-5 bg-gradient-to-b from-slate-950 to-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between shadow-xl">
+                <div class="lg:col-span-5 bg-gradient-to-b from-slate-50 to-white border border-slate-200 p-6 rounded-2xl flex flex-col justify-between shadow-md">
                     <div class="space-y-6">
-                        <h3 class="font-bold text-lg text-slate-100 border-b border-slate-800/80 pb-3 flex items-center gap-2" data-section-id="019ef922-fe4d-7b53-84b5-6c7cb146666c">
-                            <i class="fa-solid fa-receipt text-emerald-400"></i> Financial Allocation Breakdowns
+                        <h3 class="font-bold text-lg text-slate-800 border-b border-slate-100 pb-3 flex items-center gap-2" data-section-id="019ef922-fe4d-7b53-84b5-6c7cb146666c">
+                            <i class="fa-solid fa-receipt text-orange-500"></i> Financial Allocation Breakdowns
                         </h3>
                         
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800/40">
-                                <span class="text-[10px] text-slate-400 font-bold uppercase block tracking-wider">Avg Team Earnings</span>
-                                <span class="text-lg font-extrabold text-sky-400" id="res-team-mo">$361.88 / mo</span>
+                            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+                                <span class="text-[10px] text-slate-500 font-bold uppercase block tracking-wider">Avg Team Earnings</span>
+                                <span class="text-lg font-extrabold text-orange-500" id="res-team-mo">$361.88 / mo</span>
                             </div>
-                            <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800/40">
-                                <span class="text-[10px] text-slate-400 font-bold uppercase block tracking-wider">CSE Lab Fund</span>
-                                <span class="text-lg font-extrabold text-emerald-400" id="res-lab-mo">$145.00 / mo</span>
+                            <div class="p-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+                                <span class="text-[10px] text-slate-500 font-bold uppercase block tracking-wider">CSE Lab Fund</span>
+                                <span class="text-lg font-extrabold text-orange-500" id="res-lab-mo">$145.00 / mo</span>
                             </div>
                         </div>
 
-                        <div class="border-t border-slate-800/80 pt-4">
+                        <div class="border-t border-slate-100 pt-4">
                             <div class="flex justify-between items-end mb-1">
-                                <span class="text-sm font-medium text-slate-300">Lab Yearly Reinvestment Fund</span>
-                                <span class="text-2xl font-black text-emerald-400" id="res-lab-yr">$1,740.00</span>
+                                <span class="text-sm font-medium text-slate-700">Lab Yearly Reinvestment Fund</span>
+                                <span class="text-2xl font-black text-orange-500" id="res-lab-yr">$1,740.00</span>
                             </div>
                             <p class="text-[10px] text-slate-500 italic" data-section-id="019ef922-fe4d-7ba0-b287-fa8f5f2d98bf">Compounded by dynamic cloud payouts and partner referral rewards.</p>
                         </div>
                     </div>
 
                     <!-- Executive Grade Credit Section -->
-                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                         <div class="max-w-[80%]">
-                            <span class="text-[10px] text-sky-400 font-bold uppercase tracking-wider block">Department Lab Syllabus Integration</span>
+                            <span class="text-[10px] text-orange-500 font-bold uppercase tracking-wider block">Department Lab Syllabus Integration</span>
                             <p class="text-xs text-slate-400 leading-snug mt-0.5" data-section-id="019ef922-fe4d-7bbb-9693-afc154d17a6e">Syllabus approved under Dr. Rajeev Kumar Chechi. Practical labs award credits for functional deployments.</p>
                         </div>
-                        <div class="h-10 w-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 border border-sky-500/20">
+                        <div class="h-10 w-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-600 border border-orange-500/20">
                             <i class="fa-solid fa-file-signature"></i>
                         </div>
                     </div>
@@ -505,13 +505,13 @@
 
         <!-- Standard Deployable Code Block -->
         <section class="space-y-4" data-section-id="019ef922-fe4d-7bd8-94c7-2da32526cd92">
-            <h2 class="text-xl font-extrabold tracking-tight text-slate-100 flex items-center gap-2" data-section-id="019ef922-fe4d-7be1-8718-bdbe7763d2f5">
-                <i class="fa-solid fa-code text-sky-400"></i> Standard Deployable Edge Template
+            <h2 class="text-xl font-extrabold tracking-tight text-slate-900 flex items-center gap-2" data-section-id="019ef922-fe4d-7be1-8718-bdbe7763d2f5">
+                <i class="fa-solid fa-code text-orange-500"></i> Standard Deployable Edge Template
             </h2>
             <p class="text-xs text-slate-400" data-section-id="019ef922-fe4d-7bed-b4cf-aa879d4689ee">
                 All student micro-SaaS applications run on this robust Edge Worker core, integrating split-revenue reporting directly inside the request cycle headers.
             </p>
-            <pre class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-[11px] text-emerald-400 overflow-x-auto font-mono leading-relaxed max-h-[220px]" data-section-id="019ef922-fe4d-7bfa-abb4-f0eab62d8c12">
+            <pre class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-[11px] text-orange-500 overflow-x-auto font-mono leading-relaxed max-h-[220px]" data-section-id="019ef922-fe4d-7bfa-abb4-f0eab62d8c12">
 addEventListener('fetch', event => {
   event.respondWith(handleSplitRequest(event.request))
 })
@@ -543,7 +543,7 @@ async function handleSplitRequest(request) {
     </main>
 
     <!-- Academic Institutional Footer -->
-    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 mt-12">
+    <footer class="border-t border-slate-200 bg-slate-50 py-12 mt-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div class="space-y-2">
                 <div class="flex items-center gap-3">
@@ -559,17 +559,17 @@ async function handleSplitRequest(request) {
             
             <div class="space-y-1 md:text-center">
                 <span class="text-xs font-bold text-slate-400 uppercase tracking-widest block">Institutional Advisor</span>
-                <span class="text-sm font-semibold text-slate-200 block">Dr. Rajeev Kumar Chechi</span>
+                <span class="text-sm font-semibold text-slate-800 block">Dr. Rajeev Kumar Chechi</span>
                 <span class="text-[10px] text-slate-500 block">Department of Computer Science & Engineering</span>
             </div>
 
             <div class="flex flex-col md:items-end justify-center gap-2">
                 <span class="text-xs text-slate-500 font-semibold uppercase tracking-wider block">Lab Platforms Integration</span>
                 <div class="flex gap-2">
-                    <span class="h-7 w-7 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs hover:text-orange-400 hover:border-orange-500/20 transition-all"><i class="fa-brands fa-aws"></i></span>
-                    <span class="h-7 w-7 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs hover:text-blue-400 hover:border-blue-500/20 transition-all"><i class="fa-brands fa-microsoft"></i></span>
-                    <span class="h-7 w-7 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs hover:text-red-400 hover:border-red-500/20 transition-all"><i class="fa-brands fa-google"></i></span>
-                    <span class="h-7 w-7 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 text-xs hover:text-amber-400 hover:border-amber-500/20 transition-all"><i class="fa-brands fa-cloudflare"></i></span>
+                    <span class="h-7 w-7 rounded bg-white border border-slate-200 flex items-center justify-center text-slate-600 text-xs hover:text-orange-600 hover:border-orange-500/20 transition-all"><i class="fa-brands fa-aws"></i></span>
+                    <span class="h-7 w-7 rounded bg-white border border-slate-200 flex items-center justify-center text-slate-600 text-xs hover:text-orange-600 hover:border-orange-500/20 transition-all"><i class="fa-brands fa-microsoft"></i></span>
+                    <span class="h-7 w-7 rounded bg-white border border-slate-200 flex items-center justify-center text-slate-600 text-xs hover:text-orange-600 hover:border-orange-500/20 transition-all"><i class="fa-brands fa-google"></i></span>
+                    <span class="h-7 w-7 rounded bg-white border border-slate-200 flex items-center justify-center text-slate-600 text-xs hover:text-orange-600 hover:border-orange-500/20 transition-all"><i class="fa-brands fa-cloudflare"></i></span>
                 </div>
             </div>
         </div>
@@ -594,8 +594,8 @@ async function handleSplitRequest(request) {
                 labels: Array(15).fill(''),
                 datasets: [{
                     data: Array(15).fill(0),
-                    borderColor: '#0ea5e9',
-                    backgroundColor: 'rgba(14, 165, 233, 0.12)',
+                    borderColor: '#ea580c',
+                    backgroundColor: 'rgba(234, 88, 12, 0.08)',
                     borderWidth: 2,
                     fill: true,
                     tension: 0.4,
@@ -613,7 +613,7 @@ async function handleSplitRequest(request) {
                     y: { 
                         min: 0,
                         max: 200,
-                        grid: { color: 'rgba(51, 65, 85, 0.15)' },
+                        grid: { color: 'rgba(229, 231, 235, 0.5)' },
                         ticks: { color: '#64748b', font: { size: 10 } }
                     }
                 }
@@ -629,7 +629,7 @@ async function handleSplitRequest(request) {
             if (!activeSimulation) {
                 // Turn simulator ON
                 activeSimulation = true;
-                btn.className = "px-5 py-2.5 bg-rose-600 hover:bg-rose-500 text-slate-100 font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2";
+                btn.className = "px-5 py-2.5 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2";
                 icon.className = "fa-solid fa-stop";
                 text.innerText = "Halt Simulations";
                 boost.disabled = false;
@@ -644,14 +644,14 @@ async function handleSplitRequest(request) {
                 clearInterval(simInterval);
                 simInterval = null;
 
-                btn.className = "px-5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2";
+                btn.className = "px-5 py-2.5 bg-orange-600 hover:bg-orange-500 text-white font-bold rounded-xl transition-all shadow-md text-sm flex items-center gap-2";
                 icon.className = "fa-solid fa-play";
                 text.innerText = "Activate Simulations";
                 boost.disabled = true;
                 
                 // Reset multi
                 trafficLoadMultiplier = 1;
-                boost.className = "px-4 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 disabled:opacity-40 text-slate-400 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5";
+                boost.className = "px-4 py-2.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 disabled:opacity-40 text-slate-700 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5";
                 boost.innerHTML = `<i class="fa-solid fa-gauge-high"></i> Boost Traffic (3x)`;
 
                 logConsole("[System] Simulation cycle gracefully paused. Total compiled ledger values retained.");
@@ -668,7 +668,7 @@ async function handleSplitRequest(request) {
             } else {
                 trafficLoadMultiplier = 1;
                 boostBtn.innerHTML = `<i class="fa-solid fa-gauge-high"></i> Boost Traffic (3x)`;
-                boostBtn.className = "px-4 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-100 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5";
+                boostBtn.className = "px-4 py-2.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-800 font-semibold rounded-xl transition-all text-sm flex items-center gap-1.5";
                 logConsole("[Traffic-Boost] Stabilizing queries back to base developer sandbox requests.");
             }
         }
